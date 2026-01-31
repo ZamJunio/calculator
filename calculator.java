@@ -24,6 +24,11 @@ public class calculator {
             case 1:
                 result = addition(num1, num2);
                 break;
+                
+              case 2:
+                result = subtraction(num1, num2);
+                break;
+                
             default:
                 System.out.println("Invalid choice");
                 scan.close();
@@ -36,6 +41,10 @@ public class calculator {
 
     public static int addition(int num1, int num2) {
         return num1 + num2;
+    ]
+    public static int subtraction(int num1, int num2) {
+        return num1 - num2;
     }
 
 }
+
