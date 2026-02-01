@@ -28,6 +28,10 @@ public class calculator {
               case 2:
                 result = subtraction(num1, num2);
                 break;
+
+              case 3:
+                result = multiplication(num1, num2);
+                break;
                 
             default:
                 System.out.println("Invalid choice");
@@ -47,18 +51,7 @@ public class calculator {
     }
 
 }
-
-    System.out.print("Enter first number: ");
-    double num1 = input.nextDouble();
-
-    System.out.print("Enter second number: ");
-    double num2 = input.nextDouble();
-
-    double result = num1 * num2;
-    
-    System.out.println("Result: " + result);
-
-    input.close();
-
+  public static int multiplication(int num1, int num2) {
+        return num1 * num2;
     }
 }
